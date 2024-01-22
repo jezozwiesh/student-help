@@ -5,6 +5,6 @@ app.get("/", (res) => {
   res.redirect("/home");
 });
 
-app.get("home", (res) => {
-  res.send("home.html");
+app.get("/home", (res) => {
+  res.send("src/home.html");
 });
