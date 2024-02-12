@@ -1,19 +1,4 @@
 <?php
-session_start();
-session_regenerate_id();
-
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$db = 'pomoc_kolezenska';
-
-$con = new mysqli($host, $username, $password, $db);
-
-if($con->connect_error)
-{
-    die("Connection error: ".$con->connect_error);
-}
-
 if(isset($_POST['register']))
 {
     $name = $_POST['imie'];
